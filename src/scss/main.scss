@@ -1,0 +1,9 @@
+// variabelen overschrijven MOET voor het inladen van Bootstrap
+// je vindt _variables.scss en alle andere Bootstrap Sass bestanden op onderstaand pad
+
+@use "./node_modules/bootstrap/scss/bootstrap";
+
+//
+body {
+    background-color:hotpink;
+}
