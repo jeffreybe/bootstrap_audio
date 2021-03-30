@@ -3,7 +3,7 @@ Bootstrap 5.0.0-beta3 boilerplate with Dart Sass, Gulp, autoprefixer, minificati
 Made with ❤️ for my Front-End Dev students 😸
 
 Instructions:
-cd into src directory
 run npm install
+cd into src directory
 run gulp 
 customize!
