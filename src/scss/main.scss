@@ -3,10 +3,34 @@
 //ook utilities overschrijven kan op deze plaats - vergeet niet de !default flag mee over te nemen
 
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
 
 //extra custom code plaats je onder het inladen, bv.:
 body {
-  background-color: hotpink;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  position: relative;
+  padding-top: 70px;
 }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+nav, .navbar, .bg-dark {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
 
 // wil je Bootstrap niet volledig inladen maar slechts de Sass partials en JS bestanden die je nodig hebt, ziehier hoe je dat kan doen https://getbootstrap.com/docs/5.0/customize/optimize/
