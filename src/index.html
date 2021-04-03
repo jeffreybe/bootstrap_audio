@@ -36,9 +36,10 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse">
+
                 <ul class="navbar-nav nav-pills">
                   <li class="nav-item ">
-                    <a class="nav-link " href="#Legator">Legator</a>
+                    <a class="nav-link active" href="#Legator">Legator</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Jackson">Jackson</a>
@@ -58,13 +59,13 @@
 
   <section class="guitar">
     <div class="container">
-      <h2 class="title-brand">Guitars</h2>
-      <div class="row">
+      <h2 class="display-1 center padding-bot">Guitars</h2>
+      <div class="guitar-ad row">
         <div class="col-md-4">
-          <img class="img-fluid img-box w-50" src="../img/legator.png" alt="Legator">
+          <img class="img-fluid img-box legator" src="../img/legator.png" alt="Legator">
         </div>
         <div class="col-md-8">
-          <h2 id="Legator">Legator</h2>
+          <h2 id="Legator" class="display-4">Legator</h2>
           <p>Een moderne metal gitaar met Fishman Fluence Moderns Pick-ups.
             De gitaar beschikt over een standaard bolt-on structuur met een scale length van 25.5 inch met een 5-piece
             maple en mahogany nek en een mahogany body.
@@ -80,9 +81,9 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="guitar-ad row">
         <div class="col-lg-8">
-          <h2 id="Jackson">Jackson</h2>
+          <h2 id="Jackson" class="display-4">Jackson</h2>
           <p>De Jackson X SLAT7 FF 7-snarige gitaar in Metallic blauw voldoet aan de behoeften van de moderne spelers
             die verschillende genres bespelen en zij die een hoog presterende instrument eisen. De EMG pickups leveren
             over de gehele sonische spectrum helderheid met power en punch voor zware riffs en soepele solo's. Ze zijn
@@ -99,12 +100,12 @@
           <img class="img-fluid img-box" src="../img/jackson.png" alt="Jackson">
         </div>
       </div>
-      <div class="row">
+      <div class="guitar-ad row">
         <div class="col-lg-4">
           <img class="img-fluid img-box" src="../img/ltd.png" alt="ESP LTD">
         </div>
         <div class="col-lg-8">
-          <h2 id="LTD">ESP LTD</h2>
+          <h2 id="LTD" class="display-4">ESP LTD</h2>
           <p>De ESP LTD PT-4 Pancho Tomaselli basgitaar is geladen met een paar krachtige EMG JX Jazz Pickups, die
             produceren een zware en agressieve aanval, ideaal voor wanneer u behoefte aan een luid en volledige
             uitvoeringen. De esdoorn hals levert heldere tinten met uitstekende sustain, terwijl de ebbenhouten toets
@@ -123,96 +124,74 @@
 
   <section class="banner">
     <div class="row">
-
+      <p class="display-1 center">
+        You can never have enough gear!
+      </p>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="mb-4">
     <div class="container">
+
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contacteer mij!</h2>
+      <p class="text-center w-responsive mx-auto">Vragen over de gitaren en interesse om 1 te kopen? Contacteer mij en
+        ik beantwoord u zo snel mogelijk!</p>
+
       <div class="row">
-        <h2>Koop de gitaar</h2>
-        <form class="myForm" method="get" enctype="application/x-www-form-urlencoded"
-          action="/html/codes/html_form_handler.cfm">
 
-          <p>
-            <label>Name
-              <input type="text" name="customer_name" required>
-            </label>
-          </p>
+        <div class="col-md-12">
+          <form id="contact-form" name="contact-form">
 
-          <p>
-            <label>Phone
-              <input type="tel" name="phone_number">
-            </label>
-          </p>
+            <div class="row">
 
-          <p>
-            <label>Email
-              <input type="email" name="email_address">
-            </label>
-          </p>
 
-          <fieldset>
-            <legend>Which taxi do you require?</legend>
-            <p><label class="choice"> <input type="radio" name="taxi" required value="car"> Car </label></p>
-            <p><label class="choice"> <input type="radio" name="taxi" required value="van"> Van </label></p>
-            <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
-          </fieldset>
+              <div class="col-md-6">
+                <div class="md-form ">
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name" class="">Uw naam</label>
+                </div>
+              </div>
 
-          <fieldset>
-            <legend>Extras</legend>
-            <p><label class="choice"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
-            <p><label class="choice"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access
-              </label></p>
-            <p><label class="choice"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
-          </fieldset>
+              <div class="col-md-6">
+                <div class="md-form ">
+                  <input type="text" id="email" name="email" class="form-control">
+                  <label for="email" class="">Uw email</label>
+                </div>
+              </div>
+            </div>
 
-          <p>
-            <label>Pickup Date/Time
-              <input type="datetime-local" name="pickup_time" required>
-            </label>
-          </p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form ">
+                  <input type="text" class="form-control">
+                  <label>Onderwerp</label>
+                </div>
+              </div>
+            </div>
 
-          <p>
-            <label>Pickup Place
-              <select id="pickup_place" name="pickup_place">
-                <option value="" selected="selected">Select One</option>
-                <option value="office">Taxi Office</option>
-                <option value="town_hall">Town Hall</option>
-                <option value="telepathy">We'll Guess!</option>
-              </select>
-            </label>
-          </p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2"
+                    class="form-control md-textarea"></textarea>
+                  <label for="message">Uw bericht</label>
+                </div>
+              </div>
+            </div>
+          </form>
 
-          <p>
-            <label>Dropoff Place
-              <input type="text" name="dropoff_place" required list="destinations">
-            </label>
-
-            <datalist id="destinations">
-              <option value="Airport">
-              <option value="Beach">
-              <option value="Fred Flinstone's House">
-            </datalist>
-          </p>
-
-          <p>
-            <label>Special Instructions
-              <textarea name="comments" maxlength="500"></textarea>
-            </label>
-          </p>
-
-          <p><button>Submit Booking</button></p>
-
-        </form>
+          <div class="text-center text-md-left">
+            <a class="btn btn-primary">Verstuur</a>
+          </div>
+        </div>
       </div>
-    </div>
+
   </section>
 
   <footer>
     <div class="container">
       <p> Jeffrey Yu</p>
-      <a href="#">Privacy</a>
+
     </div>
   </footer>
 
@@ -220,7 +199,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
 
-  //
+
   <script>
     window.addEventListener("resize", ResizeWindow);
     function ResizeWindow() {

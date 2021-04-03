@@ -33,53 +33,76 @@ nav,
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.myForm {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 0.8em;
-  width: 20em;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1.padding-bot, h2.padding-bot{
+  padding-bottom: 70px;
+}
+
+iframe{
+  padding-top: 30px
+}
+
+.guitar-ad {
+  padding-bottom: 5rem;
+}
+
+img.legator {
+  max-height: 416px;
+  padding-left: 150px;
+}
+
+.banner {
+  background-color: orange;
+  padding: 5rem 0;
+  margin-bottom: 70px;
+}
+
+
+
+.contact-form {
   padding: 1em;
   border: 1px solid #ccc;
 }
 
-.myForm * {
-  box-sizing: border-box;
-}
-
-.myForm fieldset {
+.contact-form fieldset {
   border: none;
   padding: 0;
 }
 
-.myForm legend,
-.myForm label {
+.contact-form legend,
+.contact-form label {
   padding: 0;
   font-weight: bold;
 }
 
-.myForm label.choice {
+.contact-form label.choice {
   font-size: 0.9em;
   font-weight: normal;
 }
 
-.myForm input[type="text"],
-.myForm input[type="tel"],
-.myForm input[type="email"],
-.myForm input[type="datetime-local"],
-.myForm select,
-.myForm textarea {
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
   display: block;
   width: 100%;
   border: 1px solid #ccc;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 0.9em;
   padding: 0.3em;
 }
 
-.myForm textarea {
+.contact-form textarea {
   height: 100px;
 }
 
-.myForm button {
+.contact-form button {
   padding: 1em;
   border-radius: 0.5em;
   background: #eee;
@@ -88,9 +111,14 @@ nav,
   margin-top: 1em;
 }
 
-.myForm button:hover {
+.contact-form button:hover {
   background: #ccc;
   cursor: pointer;
 }
 
+
+footer{
+  background-color: rgb(114, 114, 114);
+  margin-top: 70px;
+}
 // wil je Bootstrap niet volledig inladen maar slechts de Sass partials en JS bestanden die je nodig hebt, ziehier hoe je dat kan doen https://getbootstrap.com/docs/5.0/customize/optimize/
